@@ -52,6 +52,7 @@ export default function Home() {
                                 </div>
                             </div>
                         </a>
+                        <a className="link" href="https://drive.google.com/file/d/1ojL_9teHOS5y0_d2DSFkLmtrz8mMn2pK/view?usp=sharing">Download Astronet Android Apk</a>
                         <a href="https://github.com/CrisValhas/PI" >
                             <div className="tile">
                                 <h3>React SPA Videogames</h3>
@@ -63,6 +64,7 @@ export default function Home() {
                                 </div>
                             </div>
                         </a>
+                        <a className="link" href="https://videogamesapp-mauve.vercel.app/">Visit videogames website</a>
                     </div>
                 </div>
             </div>

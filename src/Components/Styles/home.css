@@ -12,6 +12,21 @@
 .picProfile {
     width: 100%;
 }
+.link{
+    margin: 5%;
+    color:#efefef;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: 900;
+}
+.link :hover {
+    margin: 5%;
+    color:#efefef;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: 1000;
+    background-color: #ef8354;
+}
 
 .textProfile {
     border-radius: 15px;
