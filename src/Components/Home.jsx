@@ -41,25 +41,28 @@ export default function Home() {
                         Most of my work is open source. I hope you find something useful. Enjoy your stay!
                     </div>
                     <div className="proyects">
-                        <div className="tile">
-                        <a href="https://github.com/vlmnst/AstroNet" ><h3>React Native Astronet</h3></a>
-                            <div className="text">
-                                <img src={Astronet} />
-                                <h1>AstroNet</h1>
-                                <h2 className="animate-text">Bootcamp Henry 2022</h2>
-                                <p className="animate-text">proyecto realizado con un equipo de 8 personas para presentar en el examen final utilizando react native, mongoDb, redux toolkits y muchas muchas ganas</p>
+                        <a href="https://github.com/vlmnst/AstroNet" >
+                            <div className="tile">
+                                <h3>React Native Astronet</h3>
+                                <div className="text">
+                                    <img src={Astronet} />
+                                    <h1>AstroNet</h1>
+                                    <h2 className="animate-text">Bootcamp Henry 2022</h2>
+                                    <p className="animate-text">proyecto realizado con un equipo de 8 personas para presentar en el examen final utilizando react native, mongoDb, redux toolkits y muchas muchas ganas</p>
+                                </div>
                             </div>
-                        </div>
-
-                        <div className="tile">
-                            <a href="https://github.com/CrisValhas/PI" ><h3>React SPA Videogames</h3></a>
-                            <div className="text">
-                                <img src={PI} />
-                                <h1>Videogames app</h1>
-                                <h2 className="animate-text">Bootcamp Henry 2022</h2>
-                                <p className="animate-text">Es una apptipo SPA que utiliza react , redux, sequalize postgree y express junto con una api de informacion con mas de 500mil juegos a dispocicion</p>
+                        </a>
+                        <a href="https://github.com/CrisValhas/PI" >
+                            <div className="tile">
+                                <h3>React SPA Videogames</h3>
+                                <div className="text">
+                                    <img src={PI} />
+                                    <h1>Videogames app</h1>
+                                    <h2 className="animate-text">Bootcamp Henry 2022</h2>
+                                    <p className="animate-text">Es una apptipo SPA que utiliza react , redux, sequalize postgree y express junto con una api de informacion con mas de 500mil juegos a dispocicion</p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
