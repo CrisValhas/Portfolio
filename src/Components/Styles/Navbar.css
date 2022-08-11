@@ -1,0 +1,124 @@
+.navigation {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    background: linear-gradient(90deg, #ef8354 35%, #e5b181 100%);;
+    padding: 0.5rem 0rem;
+    color: #efefef;
+    box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
+}
+.navbutton{
+    font-family: monospace;
+    padding: 12px;
+    border-radius: 9px;
+    border-color: #efefef;
+    border-style: solid;
+    background-color: #ef8354;
+    font-size: larger;
+    box-shadow: 0 0px 2px 2px rgba(9, 9, 9, 0.23);
+}
+.navbutton:hover{
+    font-family: monospace;
+    padding: 12px;
+    border-radius: 9px;
+    border-color: #efefef;
+    border-style: solid;
+    background-color: #ef8354;
+    font-size: larger;
+    box-shadow: 0px 0px 2px 2px rgba(255, 255, 255, 0.23);
+}
+.brand-name {
+    font-family: monospace;
+    text-decoration: double;
+    color: #efefef;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    margin-left: 2rem;
+    
+}
+
+.navigation-menu {
+    margin-left: auto;
+}
+
+.navigation-menu ul {
+    display: flex;
+    padding: 0;
+}
+
+.navigation-menu li {
+    list-style-type: none;
+    margin: 0 1rem;
+}
+
+.navigation-menu li a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    color:white;
+}
+
+.hamburger {
+    border: 0;
+    height: 40px;
+    width: 40px;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: #efefef;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    display: none;
+}
+
+.hamburger:hover {
+    background-color: #efefef;
+}
+
+@media screen and (max-width: 550px) {
+    .hamburger {
+        display: block;
+    }
+
+    .navigation-menu ul {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        color:white;
+        height: max-content;
+        background-color: rgb(174, 174, 174);
+        border-top: 1px solid #ef8354;
+        display: none;
+    }
+
+    .navigation-menu li {
+        text-align: center;
+        margin: 0;
+        padding: 5px;
+    }
+
+    .navigation-menu li a {
+        border-color: #ef8354;
+        border-width: 10px;
+        color: rgb(255, 255, 255);
+        width: 100%;
+        padding: 1.5rem 0;
+    }
+
+    .navigation-menu li:hover {
+        background-color: #ef8354;
+    }
+
+    .navigation-menu.expanded ul {
+        display: block;
+    }
+}
