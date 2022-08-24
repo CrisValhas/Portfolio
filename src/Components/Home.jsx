@@ -2,6 +2,7 @@ import "./Styles/home.css";
 import profile from "../Media/Profile.jpg";
 import Astronet from "../Media/astroNet.png";
 import PI from "../Media/PI.png";
+import PuntayHacha from "../Media/PuntayHacha.png";
 
 export default function Home() {
 
@@ -41,6 +42,8 @@ export default function Home() {
                         Most of my work is open source. I hope you find something useful. Enjoy your stay!
                     </div>
                     <div className="proyects">
+
+
                         <a href="https://github.com/vlmnst/AstroNet" >
                             <div className="tile">
                                 <h3>React Native Astronet</h3>
@@ -53,6 +56,8 @@ export default function Home() {
                             </div>
                         </a>
                         <a className="link" href="https://drive.google.com/file/d/1ojL_9teHOS5y0_d2DSFkLmtrz8mMn2pK/view?usp=sharing">Download Astronet Android Apk</a>
+                        
+                        
                         <a href="https://github.com/CrisValhas/PI" >
                             <div className="tile">
                                 <h3>React SPA Videogames</h3>
@@ -65,6 +70,20 @@ export default function Home() {
                             </div>
                         </a>
                         <a className="link" href="https://videogamesapp-mauve.vercel.app/">Visit videogames website</a>
+
+
+                        <a href="https://github.com/CrisValhas/puntayhacha" >
+                            <div className="tile">
+                                <h3>React App</h3>
+                                <div className="text">
+                                    <img className="img" src={PuntayHacha} />
+                                    <h1>Punta y Hacha</h1>
+                                    <h2 className="animate-text">agosto 2022</h2>
+                                    <p className="animate-text">Pagina de contacto de la chacra Punta y Hacha, Con opción de idioma ingles/español, responsive y en css puro  </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a className="link" href="https://puntayhacha.com.ar/">Visit website</a>
                     </div>
                 </div>
             </div>
