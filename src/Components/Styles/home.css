@@ -48,6 +48,9 @@
 .text{
     width: 323px;
 }
+.mail{
+    color:white
+}
 .tile {
     width: 380px;
     height:380px;
