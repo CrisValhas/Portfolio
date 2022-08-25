@@ -49,6 +49,7 @@
     width: 323px;
 }
 .mail{
+    text-decoration: none;
     color:white
 }
 .tile {

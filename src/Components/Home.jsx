@@ -20,7 +20,7 @@ export default function Home() {
                         </div>
                         <div className="content">
                             <h1>Developer Full Stack</h1>
-                            <h3 className="mail">cristianrubiles@gmail.com</h3>
+                            <a href="mailto:cristianrubiles@gmail.com"><h3 className="mail">cristianrubiles@gmail.com</h3></a>
                         </div>
                         <div className="devbox">
                             <img className="devico" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />
