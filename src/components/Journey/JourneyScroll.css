@@ -1,0 +1,172 @@
+/* Journey SVG Path */
+.journey-path-svg {
+  z-index: 1;
+}
+
+/* Journey Tooltip */
+.journey-tooltip {
+  position: fixed;
+  left: 50%;
+  bottom: 3rem;
+  transform: translateX(-50%);
+  z-index: 1000;
+  min-width: 320px;
+  max-width: 450px;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  border: 2px solid #1976d2;
+  pointer-events: all;
+}
+
+.journey-tooltip.light {
+  background: white;
+  color: #212121;
+}
+
+.journey-tooltip.dark {
+  background: #1a1a2e;
+  color: #e0e0e0;
+}
+
+.tooltip-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.tooltip-header h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #1976d2;
+}
+
+.tooltip-close {
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 1.3rem;
+  cursor: pointer;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.tooltip-close:hover {
+  transform: scale(1.2);
+  color: #1976d2;
+}
+
+.journey-tooltip p {
+  margin: 0 0 1.25rem 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  opacity: 0.85;
+}
+
+.tooltip-footer {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  justify-content: space-between;
+}
+
+.tooltip-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.tooltip-btn.light {
+  background: linear-gradient(135deg, #1976d2 0%, #1565c0 100%);
+  color: white;
+}
+
+.tooltip-btn.light:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(25, 118, 210, 0.3);
+}
+
+.tooltip-btn.light:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.tooltip-btn.dark {
+  background: linear-gradient(135deg, #1976d2 0%, #2196f3 100%);
+  color: white;
+}
+
+.tooltip-btn.dark:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(25, 118, 210, 0.4);
+}
+
+.tooltip-btn.dark:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.tooltip-counter {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #1976d2;
+  min-width: 45px;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .journey-tooltip {
+    min-width: 280px;
+    max-width: 380px;
+  }
+}
+
+@media (max-width: 768px) {
+  .journey-tooltip {
+    min-width: 260px;
+    max-width: 320px;
+    padding: 1.2rem;
+    bottom: 1.5rem;
+  }
+
+  .tooltip-header h4 {
+    font-size: 1rem;
+  }
+
+  .journey-tooltip p {
+    font-size: 0.9rem;
+  }
+
+  .tooltip-btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.75rem;
+  }
+
+  .tooltip-counter {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .journey-tooltip {
+    position: fixed;
+    left: 1rem;
+    right: 1rem;
+    bottom: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+  }
+}

@@ -1,0 +1,65 @@
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f5f7fa;
+  --text-primary: #212121;
+  --text-secondary: #424242;
+  --text-light: #757575;
+  --border-color: #e0e0e0;
+  --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --hover-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+[data-theme="dark"] {
+  --bg-primary: #0a0e27;
+  --bg-secondary: #1a1a2e;
+  --text-primary: #e0e0e0;
+  --text-secondary: #b0b0b0;
+  --text-light: #808080;
+  --border-color: #2a2a3e;
+  --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --hover-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+section {
+  background-color: var(--bg-primary);
+}
+
+.card,
+.project-card,
+.experience-card {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border-color: var(--border-color);
+}
+
+input,
+textarea {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border-color: var(--border-color);
+
+  &::placeholder {
+    color: var(--text-light);
+  }
+}
+
+a {
+  color: #1976d2;
+}
+
+button {
+  color: var(--text-primary);
+}
+
+.section-divider {
+  background: linear-gradient(90deg, #1976d2 0%, #1565c0 100%);
+}

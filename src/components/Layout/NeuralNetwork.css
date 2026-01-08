@@ -1,0 +1,96 @@
+.neural-network-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 280px;
+}
+
+.neural-network-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+.neural-cta-button {
+  position: relative;
+  z-index: 10;
+  padding: 16px 40px;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(135deg, #1976d2 0%, #1565c0 100%);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 0 8px 24px rgba(25, 118, 210, 0.4);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  letter-spacing: 0.3px;
+}
+
+.neural-cta-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 36px rgba(25, 118, 210, 0.6);
+  background: linear-gradient(135deg, #1565c0 0%, #0d47a1 100%);
+}
+
+.neural-cta-button:active {
+  transform: translateY(-2px);
+}
+
+.button-text {
+  font-weight: 700;
+}
+
+.button-icon {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.neural-cta-button:hover .button-icon {
+  transform: translateX(4px);
+}
+
+/* Tema oscuro */
+@media (prefers-color-scheme: dark) {
+  /* Sin cambios de fondo o borde */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .neural-network-container {
+    min-height: 240px;
+  }
+
+  .neural-cta-button {
+    padding: 14px 32px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .neural-network-container {
+    min-height: 220px;
+  }
+
+  .neural-cta-button {
+    padding: 12px 28px;
+    font-size: 14px;
+  }
+
+  .button-icon {
+    font-size: 16px;
+  }
+}
