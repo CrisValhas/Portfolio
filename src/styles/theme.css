@@ -1,65 +1,73 @@
-:root {
-  --bg-primary: #ffffff;
-  --bg-secondary: #f5f7fa;
-  --text-primary: #212121;
-  --text-secondary: #424242;
-  --text-light: #757575;
-  --border-color: #e0e0e0;
-  --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  --hover-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-}
+/* =============================================
+   DESIGN SYSTEM — CSS VARIABLES
+   Default: Dark. [data-theme="light"] overrides.
+   ============================================= */
 
+:root,
 [data-theme="dark"] {
-  --bg-primary: #0a0e27;
-  --bg-secondary: #1a1a2e;
-  --text-primary: #e0e0e0;
-  --text-secondary: #b0b0b0;
-  --text-light: #808080;
-  --border-color: #2a2a3e;
-  --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-  --hover-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  --bg: #0a0f1e;
+  --bg-surface: #111827;
+  --bg-card: #131d31;
+  --bg-subtle: #1a2540;
+  --fg: #f0f4ff;
+  --fg-muted: #8896b3;
+  --fg-faint: #4a5568;
+  --accent: #5b6ef5;
+  --accent-light: #7c8df7;
+  --accent-glow: rgba(91, 110, 245, 0.15);
+  --border: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.16);
+  --focus: 0 0 0 3px rgba(91, 110, 245, 0.5);
+  --nav-bg: rgba(10, 15, 30, 0.85);
+  --shadow-card: 0 1px 3px rgba(0,0,0,0.4), 0 4px 16px rgba(0,0,0,0.25);
+  --shadow-hover: 0 8px 32px rgba(0,0,0,0.5);
+  /* Legacy aliases used by old components still existing in repo */
+  --bg-primary: #0a0f1e;
+  --bg-secondary: #111827;
+  --text-primary: #f0f4ff;
+  --text-secondary: #8896b3;
+  --text-light: #4a5568;
+  --border-color: rgba(255, 255, 255, 0.08);
 }
 
-* {
-  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+[data-theme="light"] {
+  --bg: #f8f9fc;
+  --bg-surface: #ffffff;
+  --bg-card: #ffffff;
+  --bg-subtle: #eef1f8;
+  --fg: #0d111e;
+  --fg-muted: #5a6480;
+  --fg-faint: #9aa3b8;
+  --accent: #3b52e8;
+  --accent-light: #5b6ef5;
+  --accent-glow: rgba(59, 82, 232, 0.12);
+  --border: rgba(0, 0, 0, 0.08);
+  --border-strong: rgba(0, 0, 0, 0.16);
+  --focus: 0 0 0 3px rgba(59, 82, 232, 0.4);
+  --nav-bg: rgba(248, 249, 252, 0.9);
+  --shadow-card: 0 1px 3px rgba(0,0,0,0.06), 0 4px 16px rgba(0,0,0,0.08);
+  --shadow-hover: 0 8px 32px rgba(0,0,0,0.14);
+  /* Legacy aliases */
+  --bg-primary: #f8f9fc;
+  --bg-secondary: #ffffff;
+  --text-primary: #0d111e;
+  --text-secondary: #5a6480;
+  --text-light: #9aa3b8;
+  --border-color: rgba(0, 0, 0, 0.08);
+}
+
+*, *::before, *::after {
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    color 0.15s ease,
+    box-shadow 0.25s ease;
 }
 
 body {
-  background-color: var(--bg-primary);
-  color: var(--text-primary);
+  background-color: var(--bg);
+  color: var(--fg);
 }
 
-section {
-  background-color: var(--bg-primary);
-}
-
-.card,
-.project-card,
-.experience-card {
-  background-color: var(--bg-secondary);
-  color: var(--text-primary);
-  border-color: var(--border-color);
-}
-
-input,
-textarea {
-  background-color: var(--bg-secondary);
-  color: var(--text-primary);
-  border-color: var(--border-color);
-
-  &::placeholder {
-    color: var(--text-light);
-  }
-}
-
-a {
-  color: #1976d2;
-}
-
-button {
-  color: var(--text-primary);
-}
-
-.section-divider {
-  background: linear-gradient(90deg, #1976d2 0%, #1565c0 100%);
-}
+a { color: var(--accent-light); }
+button { color: var(--fg); }

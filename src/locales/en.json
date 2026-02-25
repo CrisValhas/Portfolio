@@ -1,0 +1,175 @@
+{
+  "nav": {
+    "what": "What I Build",
+    "work": "Work",
+    "philosophy": "Philosophy",
+    "ai": "AI Workflow",
+    "delivery": "Delivery",
+    "contact": "Contact",
+    "cvEn": "CV (EN)",
+    "cvEs": "CV (ES)"
+  },
+  "hero": {
+    "greeting": "Senior Product Engineer — Full-Stack Architecture · Fintech Systems · Technical Leadership",
+    "name": "Cristian Valtelhas",
+    "tagline": "System-Level Engineering · Frontend + Backend Validation · Orchestration Layers",
+    "description": "I design and evolve full-stack product systems for financial platforms. In my current role I act as Technical Lead, balancing frontend architecture, backend validation rules, and orchestration layers while keeping delivery continuity under enterprise constraints.",
+    "cta_primary": "See my work",
+    "cta_secondary": "Get in touch",
+    "badge": "Open to senior roles · Remote"
+  },
+  "what": {
+    "title": "What I Build",
+    "subtitle": "Three capabilities that consistently ship value in complex environments.",
+    "pillars": [
+      {
+        "icon": "arch",
+        "title": "Frontend Architecture",
+        "body": "Domain-based module boundaries, clean/hexagonal principles applied to the frontend, scalable component contracts, and design systems that grow without debt."
+      },
+      {
+        "icon": "bff",
+        "title": "BFF & API Orchestration",
+        "body": "Backend-for-Frontend layers that decouple UI teams from backend constraints — reducing coupling, simplifying state, and owning the API surface at the product level."
+      },
+      {
+        "icon": "ai",
+        "title": "AI-Enabled Engineering",
+        "body": "Structured AI workflows embedded in the development loop — not as hype, but as a systematic force multiplier for spec clarity, code review, and delivery throughput."
+      }
+    ]
+  },
+  "work": {
+    "title": "Featured Work",
+    "subtitle": "Three engagements that shaped my system-level approach to fintech architecture.",
+    "cases": [
+      {
+        "id": "santander",
+        "client": "Accenture · Santander",
+        "role": "Senior Product Engineer · Acting Technical Lead",
+        "year": "2022–2024",
+        "tag": "Fintech · White-label",
+        "title": "Debt Publication Platform",
+        "summary": "Acted as Technical Lead in the white-label transformation of an enterprise payment product, driving a multi-company debt publishing model across shared and market-specific constraints.",
+        "challenge": "Debt creation was blocked by inconsistencies across agreement variants, legacy assumptions, and orchestration behavior that did not scale to complex agreement types.",
+        "approach": "Applied system-level reasoning across layers: redesigned frontend flows, improved backend validation rules for complex agreement types, resolved data inconsistencies that blocked debt creation, and debugged/fixed a .NET orchestrator issue preventing agreement generation.",
+        "outcome": "Established a reusable white-label model with clearer boundaries between UI, validation, and orchestration — improving reliability of debt publication without relying on market-specific rewrites.",
+        "tech": ["React", "TypeScript", "BFF Pattern", "Domain-Driven Design", "REST", ".NET Orchestrator", "Validation Rules"]
+      },
+      {
+        "id": "simplestate",
+        "client": "Simplestate",
+        "role": "Senior Product Engineer",
+        "year": "2021–2022",
+        "tag": "Product Analytics · Dashboard Initiative",
+        "title": "Data-Core Dashboard Initiative",
+        "summary": "Designed and implemented an analytics dashboard initiative for B2B operations, evolving it from UI reporting into a decision-support layer used by business teams.",
+        "challenge": "Operational questions required manual analysis across fragmented data sources, creating slow feedback loops between business, product, and engineering.",
+        "approach": "Designed a data-core layer with explicit aggregation and filtering logic, then implemented dynamic metric generation so dashboards could adapt to multiple account and product contexts.",
+        "outcome": "Enabled business users to resolve recurrent operational queries directly from dashboards, reducing dependency on ad-hoc engineering analysis.",
+        "tech": ["React", "TypeScript", "Node.js", "Analytics Modeling", "Aggregation Logic", "Dashboard Architecture"]
+      },
+      {
+        "id": "arena",
+        "client": "Arena · Bonder · Freelance",
+        "role": "Senior Product Engineer",
+        "year": "2020–2021",
+        "tag": "Web3 Analytics Infrastructure · Fintech",
+        "title": "Web3 Analytics Infrastructure & Payments",
+        "summary": "Built Web3 analytics infrastructure across multiple engagements, including blockchain analytics dashboards, on-chain user segmentation, NFT ownership metrics, P2P activity analysis, and B2B/B2B2C analytics use cases.",
+        "challenge": "On-chain and payment data were high-volume, inconsistent across sources, and difficult to convert into product decisions without a clear analytics model.",
+        "approach": "Structured analytics flows beyond UI concerns: defined reusable metric contracts, aligned wallet/payment events with business dimensions, and implemented dependable query surfaces for product and operations teams.",
+        "outcome": "Positioned analytics as product infrastructure for Web3 contexts, enabling teams to reason about user behavior and payment activity with consistent system-level signals.",
+        "tech": ["React", "TypeScript", "Node.js", "ethers.js", "On-Chain Analytics", "Metric Modeling"]
+      }
+    ],
+    "viewDiagram": "View architecture diagram",
+    "hideDiagram": "Hide diagram",
+    "tech": "Tech & Approach"
+  },
+  "philosophy": {
+    "title": "Architecture & Engineering Philosophy",
+    "subtitle": "Principles I apply consistently — especially under constraint.",
+    "principles": [
+      {
+        "title": "System-level problem solving",
+        "body": "I frame incidents and delivery risks as system behaviors, not isolated tickets. The objective is to stabilize the full path from UI to validation and orchestration."
+      },
+      {
+        "title": "Legacy code as architecture context",
+        "body": "Legacy modules are constraints to model, not noise to ignore. I analyze existing behavior first, then define safe change windows before proposing structural shifts."
+      },
+      {
+        "title": "Incremental improvement under constraints",
+        "body": "I optimize for architecture that can evolve in controlled steps. Progress is measured by clearer boundaries, fewer regressions, and maintainable handoffs between teams."
+      },
+      {
+        "title": "Refactoring with delivery continuity",
+        "body": "Refactoring is planned to preserve operational continuity. I prefer reversible changes and explicit rollback paths over big-bang rewrites."
+      }
+    ]
+  },
+  "ai": {
+    "title": "AI Workflow System",
+    "subtitle": "Structured AI integration for full-stack engineering decisions.",
+    "description": "I treat AI tooling the same way I treat any dependency: with clear contracts, explicit outputs, and honest evaluation of failure modes. AI supports analysis, validation modeling, and architecture checks across frontend and backend boundaries.",
+    "layers": [
+      {
+        "phase": "Spec & Discovery",
+        "detail": "AI-assisted requirement decomposition, backend validation modeling, and edge-case mapping. Forces ambiguity to the surface before implementation starts."
+      },
+      {
+        "phase": "Architecture Review",
+        "detail": "Using LLMs as a structured sounding board for tradeoff analysis, data model analysis, and architecture stress testing before decisions are locked."
+      },
+      {
+        "phase": "Code Generation & Review",
+        "detail": "Structured prompting with explicit constraints (domain context, tech stack, boundary rules). All output is reviewed against codebase contracts and validation paths."
+      },
+      {
+        "phase": "Delivery Acceleration",
+        "detail": "PR descriptions, test scaffolding, documentation drafts, and meeting prep generated from structured context. Removes low-value cognitive load while preserving technical rigor."
+      }
+    ]
+  },
+  "delivery": {
+    "title": "Delivery & Leadership",
+    "subtitle": "Shipping is a capability, not an outcome.",
+    "points": [
+      {
+        "title": "Education",
+        "body": "Ingeniería en Sistemas — Universidad Nacional de Avellaneda (UNDAV)."
+      },
+      {
+        "title": "Team Enablement over Individual Output",
+        "body": "As TL at Accenture/Santander, my primary measure of success was team velocity and junior engineer growth — not personal throughput. A TL who is the bottleneck has failed."
+      },
+      {
+        "title": "Agile as a Delivery Contract",
+        "body": "Sprint ceremonies are only useful if they surface real blockers and reduce uncertainty. I run lean rituals: focused standups, architecture decision records, and explicit dependency mapping."
+      },
+      {
+        "title": "Cross-functional Clarity",
+        "body": "I translate between product requirements and technical constraints clearly and without condescension. Non-technical stakeholders deserve the same rigor as technical ones."
+      },
+      {
+        "title": "Scope as a Risk Tool",
+        "body": "Scope negotiation is an engineering skill. I surface scope risks early, propose slicing options, and make tradeoffs explicit rather than absorbing them silently."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Let's work together",
+    "subtitle": "Open to senior engineering and architecture roles in fintech and high-complexity product environments. Remote-first.",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "cvEn": "Download CV (EN)",
+    "cvEs": "Download CV (ES)",
+    "location": "Buenos Aires, Argentina · Available Remotely"
+  },
+  "footer": {
+    "copy": "Cristian Valtelhas · Senior Product Engineer",
+    "built": "Built with React · Designed for clarity"
+  }
+}

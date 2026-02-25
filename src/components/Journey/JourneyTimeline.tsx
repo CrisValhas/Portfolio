@@ -18,6 +18,9 @@ export const JourneyTimeline: React.FC = () => {
   const { theme } = useTheme();
   const [isMinimized, setIsMinimized] = useState(false);
   const lastScrollSectionRef = useRef(-1);
+  const panelRef = useRef<HTMLDivElement>(null);
+  const iconRef = useRef<HTMLButtonElement>(null);
+  const hideTimeoutRef = useRef<NodeJS.Timeout>();
 
   // Detectar sección visible por scroll y actualizar el paso del onboarding
   useEffect(() => {
@@ -46,6 +49,20 @@ export const JourneyTimeline: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [currentStep, goToStep]);
 
+  // Manejar mouse leave del modal
+  const handleModalMouseLeave = () => {
+    hideTimeoutRef.current = setTimeout(() => {
+      setIsMinimized(true);
+    }, 300); // 300ms de espera antes de minimizar
+  };
+
+  // Manejar mouse enter del modal
+  const handleModalMouseEnter = () => {
+    if (hideTimeoutRef.current) {
+      clearTimeout(hideTimeoutRef.current);
+    }
+  };
+
   if (!isOnboarding) return null;
 
   const step = steps[currentStep];
@@ -63,39 +80,42 @@ export const JourneyTimeline: React.FC = () => {
         <div className="journey-progress-fill" style={{ width: `${progress}%` }} />
       </div>
 
-      {/* Timeline lateral */}
-      {!isMinimized && (
-        <div className="journey-timeline">
-          {steps.map((step, idx) => (
-            <button
-              key={idx}
-              onClick={() => {
-                goToStep(idx);
-                // Scroll a la sección
-                const targetSection = steps[idx].sectionId;
-                const section = document.querySelector(`section#${targetSection}`);
-                if (section) {
-                  setTimeout(() => {
-                    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                  }, 50);
-                }
-              }}
-              className={`journey-timeline-item ${idx <= currentStep ? 'active' : ''} ${
-                idx === currentStep ? 'current' : ''
-              }`}
-              aria-label={`Ir a ${getSectionName(step.sectionId)}`}
-              type="button"
-            >
-              <div className="timeline-dot" />
-              <div className="timeline-label">{getSectionName(step.sectionId)}</div>
-            </button>
-          ))}
-        </div>
-      )}
+      {/* Timeline lateral - siempre visible */}
+      <div 
+        className="journey-timeline"
+        onMouseLeave={() => setIsMinimized(true)}
+      >
+        {steps.map((step, idx) => (
+          <button
+            key={idx}
+            onClick={() => {
+              setIsMinimized(false); // Asegurar que el modal esté abierto
+              goToStep(idx);
+              // Scroll a la sección
+              const targetSection = steps[idx].sectionId;
+              const section = document.querySelector(`section#${targetSection}`);
+              if (section) {
+                setTimeout(() => {
+                  section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 50);
+              }
+            }}
+            className={`journey-timeline-item ${idx <= currentStep ? 'active' : ''} ${
+              idx === currentStep ? 'current' : ''
+            }`}
+            aria-label={`Ir a ${getSectionName(step.sectionId)}`}
+            type="button"
+          >
+            <div className="timeline-dot" />
+            <div className="timeline-label">{getSectionName(step.sectionId)}</div>
+          </button>
+        ))}
+      </div>
 
       {/* Panel minimizado - circular */}
       {isMinimized && (
         <button
+          ref={iconRef}
           className="minimized-icon"
           onClick={() => setIsMinimized(false)}
           aria-label="Expandir onboarding"
@@ -107,7 +127,12 @@ export const JourneyTimeline: React.FC = () => {
 
       {/* Panel de contenido central elegante */}
       {!isMinimized && (
-        <div className="journey-content-panel">
+        <div
+          ref={panelRef}
+          className="journey-content-panel"
+          onMouseLeave={handleModalMouseLeave}
+          onMouseEnter={handleModalMouseEnter}
+        >
           <div className="panel-header">
             <span className="step-counter">
               Paso {currentStep + 1} de {steps.length}

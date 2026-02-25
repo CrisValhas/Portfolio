@@ -12,12 +12,12 @@ export const PROFILE = {
 export const SOCIAL_LINKS: SocialLink[] = [
   {
     platform: 'GitHub',
-    url: 'https://github.com/vlmnst',
+    url: 'https://github.com/CrisValhas',
     icon: 'github',
   },
   {
     platform: 'LinkedIn',
-    url: 'https://linkedin.com/in/cristian-valtelhas',
+    url: 'https://www.linkedin.com/in/cristian-valtelhas-software-engineer/',
     icon: 'linkedin',
   },
   {

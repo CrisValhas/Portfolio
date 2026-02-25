@@ -1,0 +1,44 @@
+.delivery-section {
+  background: var(--bg);
+}
+
+.delivery__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.delivery__card {
+  position: relative;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.delivery__card-num {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+}
+
+.delivery__card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--fg);
+  line-height: 1.35;
+}
+
+.delivery__card-body {
+  font-size: 0.9rem;
+  color: var(--fg-muted);
+  line-height: 1.7;
+}
+
+@media (max-width: 640px) {
+  .delivery__grid {
+    grid-template-columns: 1fr;
+  }
+}

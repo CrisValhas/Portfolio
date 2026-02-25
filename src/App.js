@@ -2,29 +2,31 @@ import React from 'react';
 import './styles/globals.css';
 import './styles/theme.css';
 import { ThemeProvider } from './context/ThemeContext';
-import { OnboardingProvider } from './context/OnboardingContext';
+import { LanguageProvider } from './context/LanguageContext';
 import { Navigation } from './components/Navigation/Navigation';
 import { Hero } from './components/Layout/Hero';
-import { About } from './components/Layout/About';
-import { ExperienceSection } from './components/Experience/Experience';
-import { SkillsSection } from './components/Skills/Skills';
-import { ProjectsSection } from './components/Projects/Projects';
+import { WhatIBuild } from './components/sections/WhatIBuild';
+import { FeaturedWork } from './components/sections/FeaturedWork';
+import { Philosophy } from './components/sections/Philosophy';
+import { AIWorkflow } from './components/sections/AIWorkflow';
+import { Delivery } from './components/sections/Delivery';
 import { Contact } from './components/Layout/Contact';
 import { Footer } from './components/Layout/Footer';
-import { JourneyScroll } from './components/Journey';
 
 function AppContent() {
   return (
     <div className="App">
       <Navigation />
-      <Hero />
-      <About />
-      <ExperienceSection />
-      <SkillsSection />
-      <ProjectsSection />
-      <Contact />
+      <main id="main-content">
+        <Hero />
+        <WhatIBuild />
+        <FeaturedWork />
+        <Philosophy />
+        <AIWorkflow />
+        <Delivery />
+        <Contact />
+      </main>
       <Footer />
-      <JourneyScroll />
     </div>
   );
 }
@@ -32,9 +34,9 @@ function AppContent() {
 function App() {
   return (
     <ThemeProvider>
-      <OnboardingProvider>
+      <LanguageProvider>
         <AppContent />
-      </OnboardingProvider>
+      </LanguageProvider>
     </ThemeProvider>
   );
 }

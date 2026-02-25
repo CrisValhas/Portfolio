@@ -1,0 +1,175 @@
+{
+  "nav": {
+    "what": "Qué Construyo",
+    "work": "Trabajo",
+    "philosophy": "Filosofía",
+    "ai": "Flujo IA",
+    "delivery": "Delivery",
+    "contact": "Contacto",
+    "cvEn": "CV (EN)",
+    "cvEs": "CV (ES)"
+  },
+  "hero": {
+    "greeting": "Senior Product Engineer — Full-Stack Architecture · Fintech Systems · Technical Leadership",
+    "name": "Cristian Valtelhas",
+    "tagline": "Ingeniería a Nivel de Sistema · Validación Frontend + Backend · Capas de Orquestación",
+    "description": "Diseño y evoluciono sistemas de producto full-stack para plataformas financieras. En mi rol actual actúo como Technical Lead, equilibrando arquitectura frontend, reglas de validación backend y capas de orquestación, manteniendo continuidad de entrega bajo restricciones enterprise.",
+    "cta_primary": "Ver mi trabajo",
+    "cta_secondary": "Contactarme",
+    "badge": "Abierto a roles senior · Remoto"
+  },
+  "what": {
+    "title": "Qué Construyo",
+    "subtitle": "Tres capacidades que consistentemente generan valor en entornos complejos.",
+    "pillars": [
+      {
+        "icon": "arch",
+        "title": "Arquitectura Frontend",
+        "body": "Límites de módulos basados en dominio, principios clean/hexagonal aplicados al frontend, contratos de componentes escalables y design systems que crecen sin deuda técnica."
+      },
+      {
+        "icon": "bff",
+        "title": "BFF y Orquestación de APIs",
+        "body": "Capas de Backend-for-Frontend que desacoplan los equipos de UI de las restricciones del backend — reduciendo acoplamiento, simplificando el estado y apropiándose de la superficie de API a nivel de producto."
+      },
+      {
+        "icon": "ai",
+        "title": "Ingeniería Habilitada por IA",
+        "body": "Flujos de trabajo de IA estructurados, integrados en el loop de desarrollo — no como hype, sino como multiplicador de fuerza sistemático para claridad de specs, revisión de código y throughput de delivery."
+      }
+    ]
+  },
+  "work": {
+    "title": "Trabajo Destacado",
+    "subtitle": "Tres compromisos que moldearon mi enfoque de arquitectura fintech a nivel de sistema.",
+    "cases": [
+      {
+        "id": "santander",
+        "client": "Accenture · Santander",
+        "role": "Senior Product Engineer · Technical Lead en funciones",
+        "year": "2022–2024",
+        "tag": "Fintech · White-label",
+        "title": "Plataforma de Publicación de Deuda",
+        "summary": "Actué como Technical Lead en la transformación white-label de un producto enterprise de pagos, impulsando un modelo de publicación de deuda multiempresa sobre restricciones compartidas y específicas por mercado.",
+        "challenge": "La creación de deuda quedaba bloqueada por inconsistencias entre variantes de convenios, supuestos legados y comportamientos de orquestación que no escalaban a tipos de acuerdo complejos.",
+        "approach": "Apliqué razonamiento a nivel de sistema entre capas: rediseñé flujos frontend, mejoré reglas de validación backend para tipos de convenio complejos, resolví inconsistencias de datos que bloqueaban la creación de deuda y depuré/corregí un orquestador .NET que impedía generar convenios.",
+        "outcome": "Se consolidó un modelo white-label reutilizable con límites más claros entre UI, validación y orquestación, mejorando la confiabilidad de la publicación de deuda sin depender de reescrituras por mercado.",
+        "tech": ["React", "TypeScript", "Patrón BFF", "Domain-Driven Design", "REST", "Orquestador .NET", "Reglas de Validación"]
+      },
+      {
+        "id": "simplestate",
+        "client": "Simplestate",
+        "role": "Senior Product Engineer",
+        "year": "2021–2022",
+        "tag": "Analítica de Producto · Iniciativa de Dashboards",
+        "title": "Iniciativa de Dashboards con Capa Data-Core",
+        "summary": "Diseñé e implementé una iniciativa de dashboards analíticos para operación B2B, evolucionándola de reporting visual a una capa de soporte de decisiones usada por negocio.",
+        "challenge": "Las consultas operativas requerían análisis manual sobre fuentes fragmentadas, generando ciclos lentos entre negocio, producto e ingeniería.",
+        "approach": "Diseñé una capa data-core con lógica explícita de agregación y filtrado, e implementé generación dinámica de métricas para adaptarse a múltiples contextos de cuentas y productos.",
+        "outcome": "Los usuarios de negocio pudieron resolver consultas operativas recurrentes directamente desde dashboards, reduciendo dependencia de análisis ad-hoc de ingeniería.",
+        "tech": ["React", "TypeScript", "Node.js", "Modelado Analítico", "Lógica de Agregación", "Arquitectura de Dashboards"]
+      },
+      {
+        "id": "arena",
+        "client": "Arena · Bonder · Freelance",
+        "role": "Senior Product Engineer",
+        "year": "2020–2021",
+        "tag": "Infraestructura Analítica Web3 · Fintech",
+        "title": "Infraestructura Analítica Web3 y Pagos",
+        "summary": "Construí infraestructura analítica Web3 en múltiples contextos, incluyendo dashboards de analítica blockchain, segmentación de usuarios on-chain, métricas de tenencia NFT, análisis de actividad P2P y casos de uso analíticos B2B y B2B2C.",
+        "challenge": "Los datos on-chain y de pagos eran voluminosos, inconsistentes entre fuentes y difíciles de traducir a decisiones de producto sin un modelo analítico claro.",
+        "approach": "Estructuré flujos analíticos más allá de la UI: definí contratos reutilizables de métricas, alineé eventos de wallets/pagos con dimensiones de negocio e implementé superficies de consulta confiables para producto y operaciones.",
+        "outcome": "La analítica quedó posicionada como infraestructura de producto en contextos Web3, habilitando decisiones sobre comportamiento de usuarios y actividad de pagos con señales consistentes a nivel de sistema.",
+        "tech": ["React", "TypeScript", "Node.js", "ethers.js", "Analítica On-Chain", "Modelado de Métricas"]
+      }
+    ],
+    "viewDiagram": "Ver diagrama de arquitectura",
+    "hideDiagram": "Ocultar diagrama",
+    "tech": "Tecnología y Enfoque"
+  },
+  "philosophy": {
+    "title": "Filosofía de Arquitectura e Ingeniería",
+    "subtitle": "Principios que aplico de forma consistente — especialmente bajo restricciones.",
+    "principles": [
+      {
+        "title": "Resolución de problemas a nivel de sistema",
+        "body": "Enmarco incidentes y riesgos de delivery como comportamientos del sistema completo, no como tickets aislados. El objetivo es estabilizar el flujo extremo a extremo entre UI, validación y orquestación."
+      },
+      {
+        "title": "Código legado como contexto arquitectónico",
+        "body": "Los módulos legados son restricciones que hay que modelar, no ruido para ignorar. Primero analizo comportamiento existente y luego defino ventanas seguras de cambio antes de proponer movimientos estructurales."
+      },
+      {
+        "title": "Mejora incremental bajo restricciones",
+        "body": "Optimizo por arquitectura que pueda evolucionar en pasos controlados. El progreso se mide por límites más claros, menos regresiones y handoffs mantenibles entre equipos."
+      },
+      {
+        "title": "Refactor con continuidad de entrega",
+        "body": "Planifico refactors para preservar continuidad operativa. Prefiero cambios reversibles y caminos explícitos de rollback antes que reescrituras de gran impacto."
+      }
+    ]
+  },
+  "ai": {
+    "title": "Sistema de Flujo de Trabajo con IA",
+    "subtitle": "Integración estructurada de IA para decisiones de ingeniería full-stack.",
+    "description": "Trato las herramientas de IA igual que cualquier dependencia: con contratos claros, salidas explícitas y evaluación honesta de modos de fallo. La IA soporta análisis, modelado de validaciones y chequeos de arquitectura entre fronteras frontend y backend.",
+    "layers": [
+      {
+        "phase": "Especificación y Descubrimiento",
+        "detail": "Descomposición de requerimientos asistida por IA, modelado de validaciones backend y mapeo de casos borde. Lleva la ambigüedad a la superficie antes de implementar."
+      },
+      {
+        "phase": "Revisión de Arquitectura",
+        "detail": "Uso LLMs como caja de resonancia estructurada para análisis de trade-offs, análisis de modelo de datos y stress testing de arquitectura antes de bloquear decisiones."
+      },
+      {
+        "phase": "Generación y Revisión de Código",
+        "detail": "Prompting estructurado con restricciones explícitas (contexto de dominio, stack tecnológico, reglas de límites). Todo output se revisa contra contratos de codebase y rutas de validación."
+      },
+      {
+        "phase": "Aceleración de Delivery",
+        "detail": "Descripciones de PR, scaffolding de tests, borradores de documentación y preparación de reuniones generados desde contexto estructurado. Elimina carga cognitiva de bajo valor preservando rigor técnico."
+      }
+    ]
+  },
+  "delivery": {
+    "title": "Delivery y Liderazgo",
+    "subtitle": "Shipear es una capacidad, no un resultado.",
+    "points": [
+      {
+        "title": "Formación",
+        "body": "Ingeniería en Sistemas — Universidad Nacional de Avellaneda (UNDAV)."
+      },
+      {
+        "title": "Habilitación del Equipo sobre Output Individual",
+        "body": "Como TL en Accenture/Santander, mi medida principal de éxito era la velocidad del equipo y el crecimiento de los ingenieros junior — no el throughput personal. Un TL que es el cuello de botella ha fallado."
+      },
+      {
+        "title": "Ágil como Contrato de Delivery",
+        "body": "Las ceremonias de sprint solo son útiles si exponen bloqueos reales y reducen incertidumbre. Corro rituales lean: standups focalizados, architecture decision records y mapeo explícito de dependencias."
+      },
+      {
+        "title": "Claridad Multifuncional",
+        "body": "Traduzco entre requerimientos de producto y restricciones técnicas con claridad y sin condescendencia. Los stakeholders no técnicos merecen el mismo rigor que los técnicos."
+      },
+      {
+        "title": "El Scope como Herramienta de Riesgo",
+        "body": "La negociación de alcance es una habilidad de ingeniería. Expongo los riesgos de scope temprano, propongo opciones de slicing y explicito los trade-offs en lugar de absorberlos silenciosamente."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Trabajemos juntos",
+    "subtitle": "Abierto a roles senior de ingeniería y arquitectura en fintech y entornos de productos de alta complejidad. Primero remoto.",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "cvEn": "Descargar CV (EN)",
+    "cvEs": "Descargar CV (ES)",
+    "location": "Buenos Aires, Argentina · Disponible Remotamente"
+  },
+  "footer": {
+    "copy": "Cristian Valtelhas · Senior Product Engineer",
+    "built": "Construido con React · Diseñado para la claridad"
+  }
+}
